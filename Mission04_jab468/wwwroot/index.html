@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jared Bare</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/icons8-motherboard-48.png" type="image/x-icon" />
+</head>
+<body>
+    <!--Main Page-->
+    <h1>Jared Bare</h1>
+
+    <figure>
+
+        <img id="picMoto" src="img/jare-meg.JPG" width="250" height="350" />
+
+        <figcaption>Motorcycle Riding with my Fiance</figcaption>
+
+    </figure>
+    <p>I want to get a better understanding of the fundamentals of information systems and the role of technology in a business setting from IS 413 at BYU. I want to gain knowledge on the different aspects of information systems, such as application development, data analysis, and system design. By taking this class, I hope to gain the skills needed to be successful in a career in information systems.</p>
+    <br />
+
+    <p>My top 3 jobs I'd like to persue are:</p>
+    <ul>
+        <li>Cybersecurity </li>
+        <li>Quality Assurance</li>
+        <li>Database Management</li>
+    </ul>
+    <br />
+    <h3>Grade Calculator:</h3>
+    <p>Enter your percentage out of 100 (omit the % sign)</p>
+    <!--Create the Form-->
+    <form action="" method="post">
+        <label>Assignments: </label>
+        <input type="number" name="assignments" min="0" max="100" step="1" /><br />
+        <label>Group Project: </label>
+        <input type="number" name="groupProject" min="0" max="100" step="1" /><br />
+        <label>Quizzes: </label>
+        <input type="number" name="quizzes" min="0" max="100" step="1" /><br />
+        <label>Midterm Exam: </label>
+        <input type="number" name="midtermExam" min="0" max="100" step="1" /><br />
+        <label>Final Exam: </label>
+        <input type="number" name="finalExam" min="0" max="100" step="1" /><br />
+        <label>INTEX: </label>
+        <input type="number" name="intex" min="0" max="100" step="1" /><br />
+        <input type="button" id="submit" value="Calculate Grade" />
+        <!--        <input id="btnSend" type="button" value="Send Message" />-->
+        <p id="grade"></p>
+    </form>
+    <!--Import Script files-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/FanMail.js"></script>
+
+</body>
+</html>
