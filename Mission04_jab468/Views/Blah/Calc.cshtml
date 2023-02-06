@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<h3>Grade Calculator:</h3>
+<p>Enter your percentage out of 100 (omit the % sign)</p>
+<!--Create the Form-->
+<form action="" method="post">
+    <label>Assignments: </label>
+    <input type="number" name="assignments" min="0" max="100" step="1" /><br />
+    <label>Group Project: </label>
+    <input type="number" name="groupProject" min="0" max="100" step="1" /><br />
+    <label>Quizzes: </label>
+    <input type="number" name="quizzes" min="0" max="100" step="1" /><br />
+    <label>Midterm Exam: </label>
+    <input type="number" name="midtermExam" min="0" max="100" step="1" /><br />
+    <label>Final Exam: </label>
+    <input type="number" name="finalExam" min="0" max="100" step="1" /><br />
+    <label>INTEX: </label>
+    <input type="number" name="intex" min="0" max="100" step="1" /><br />
+    <input type="button" id="submit" value="Calculate Grade" />
+    <!--        <input id="btnSend" type="button" value="Send Message" />-->
+    <p id="grade"></p>
+</form>
+<!--Import Script files-->
+
+<script src="js/FanMail.js"></script>
