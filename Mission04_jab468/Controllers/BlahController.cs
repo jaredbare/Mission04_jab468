@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission04_jab468.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,13 @@ namespace Mission04_jab468.Controllers
         {
             return View();
         }
+        [HttpGet]
         public IActionResult Calc()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Calc (CalcModel model)
         {
             return View();
         }
