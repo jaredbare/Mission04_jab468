@@ -6,26 +6,27 @@
 
 @model CalcModel;
 
-
+  
 <h3>Grade Calculator:</h3>
 <p>Enter your percentage out of 100 (omit the % sign)</p>
 <!--Create the Form-->
 <form action="" method="post">
     <label>Assignments: </label>
-    <input type="number" name="assignments" min="0" max="100" step="1" /><br />
+    <input type="number" asp-for="Assignments" min="0" max="100" step="1" /><br />
     <label>Group Project: </label>
-    <input type="number" name="groupProject" min="0" max="100" step="1" /><br />
+    <input type="number" asp-for="GroupProject" min="0" max="100" step="1" /><br />
     <label>Quizzes: </label>
-    <input type="number" name="quizzes" min="0" max="100" step="1" /><br />
+    <input type="number" asp-for="Quizzes" min="0" max="100" step="1" /><br />
     <label>Midterm Exam: </label>
-    <input type="number" name="midtermExam" min="0" max="100" step="1" /><br />
+    <input type="number" asp-for="Midterm" min="0" max="100" step="1" /><br />
     <label>Final Exam: </label>
-    <input type="number" name="finalExam" min="0" max="100" step="1" /><br />
+    <input type="number" asp-for="Final" min="0" max="100" step="1" /><br />
     <label>INTEX: </label>
-    <input type="number" name="intex" min="0" max="100" step="1" /><br />
+    <input type="number" asp-for="Intex" min="0" max="100" step="1" /><br />
     <input type="submit" id="submit" value="Calculate Grade" />
     <!--        <input id="btnSend" type="button" value="Send Message" />-->
     <p id="grade"></p>
+    <div asp-validation-summary="All"></div>
 </form>
 <!--Import Script files-->
 
